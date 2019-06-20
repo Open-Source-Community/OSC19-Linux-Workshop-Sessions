@@ -1,5 +1,7 @@
-# OSC-19-Workshop-Sessions
-All of the workshop sessions of OSC'19 in .md and .pdf formats.
+# OSC19-Linux-Workshop-Sessions
+This repo is meant for beginners getting into Linux and the world of FOSS, and students who have attended our Linux workshop.
+
+Here is a list of all of the content and their summaries.
 
 ### Session 1
 #### Part 1: Introduction and GNU/Linux and FOSS history
