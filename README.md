@@ -8,7 +8,7 @@ Here is a list of all of the content and their summaries.
 ### Session 1
 #### Part 1: Introduction and GNU/Linux and FOSS history
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%201/Session%231Part1.pdf)
-- MD
+- [MD](https://github.com/Satharus/OSC19-Linux-Workshop-Sessions/blob/master/Session%231Part1.md)
 
 #### Part 2: Linux Installation (Alongside Windows)
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%201/Session%231Part2.pdf)
