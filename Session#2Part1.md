@@ -1,5 +1,5 @@
 # The Shell
-## what is the shell ?
+## What is the shell ?
 
 Remembering this diagram from last session, the shell is
 
@@ -15,19 +15,22 @@ This is the standard __“TTY”__ shell that you can use, it is the default one
 Linux distributions that don’t have a GUI.
 
 ## Ways to connect to a shell
-You can access the __TTY__ shell by pressing CTRL + ALT + any of the function keys
-ranging from 2 to 7.
-_Example: CTRL + ALT + F3_
+You can access the __TTY__ shell by pressing CTRL + ALT + any of the function keys ranging from 2 to 7.
+
+_**Example:** CTRL + ALT + F3_
+
 __Note : If you are using laptop you may have to press the 'fn' key alongside the combination to make it work.__
+
 __Note : By default, most Linux distributions use TTY7 (F7) or TTY2 (F2).__
 
-It doesn’t really seem like the nicest or most intuitive wayto use your system, and what makes it even worse is that you have to exit the GUI every time you need to type a command.
+It doesn’t really seem like the nicest or most intuitive way to use your system, and what makes it even worse is that you have to exit the GUI every time you need to type a command.
+
 That’s why we have the _glorious_ terminal! 
 
 # The Terminal Emulator
 ## What is a terminal emulator?
-The terminal emulator is a great way to connect to a shell without having to close your GUI. It is an amazing way to execute commands.
-_i.e Type commands in a window that is inside your GUI._
+The terminal emulator is a great way to connect to a shell without having to close your GUI. It is an amazing way to execute commands. _i.e Type commands in a window that is inside your GUI._
+
 And it looks something like this:
 
 ![](https://github.com/MartinaGerges/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/terminal_emulator.jpg) ![](https://github.com/MartinaGerges/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/terminal_emulator_2.jpg)
@@ -40,7 +43,8 @@ The terminal can be opened using any of the following methods (and many more):
 * ALT + F2 then typing in “gnome-terminal” or “konsole” (The name of the terminal emulator that your distribution uses)
 * Right click on the desktop and click on “Open a terminal”
 * Opening the terminal from the GUI by searching for it in the menu. Search for (Terminal, Console, Konsole, etc..)
-__Note: The Windows key is called “Super” or “Meta” in Linux.__
+
+_**Note:** The Windows key is called “Super” or “Meta” in Linux._
 
 # The Command Line
 ## The Command Line Prompt
