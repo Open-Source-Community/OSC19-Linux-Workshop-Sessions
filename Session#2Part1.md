@@ -1,12 +1,11 @@
 # The Shell
 ## What is the shell ?
 
-Remembering this diagram from last session, the shell is
+Remembering this diagram from last session, the shell is the first layer that a user can use to interact with the
+operating system.
 
 ![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/layers.jpg)
 
-the shell is the first layer that a user can use to interact with the
-operating system.
 
 It looks something like this:
 
