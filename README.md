@@ -12,7 +12,7 @@ Here is a list of all of the content and their summaries.
 
 #### Part 2: Linux Installation (Alongside Windows)
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%201/Session%231Part2.pdf)
-- MD
+- [MD](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%231Part2.md)
 _________________
 ### Session 2
 #### Part 1: About the CLI, Linux Filesystem Hierarchy, Basic Commands
@@ -58,6 +58,7 @@ _________________
 ## Credit to Moderators 
 * Ahmed Elmayyah (Satharus)
 * Martina Gerges (MartinaGerges)
+* Ahmed Yasser (4hmedyasser)
 
 
 
