@@ -1,6 +1,8 @@
 # Session#2 Part 1
 [![](https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/logo-osc.png)](https://oscgeeks.org)
 
+# The Command Line & The Linux Filesystem Hierarchy
+
 
 # The Shell
 ## What is the shell ?
