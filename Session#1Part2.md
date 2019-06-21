@@ -121,5 +121,4 @@ You can check this guide in Arabic for more details at oscgeeks.org/Linux
 
 **`Caution Notice`: Do not ignore any dialog box you encouter as it may cause critical damage to your PC.**
 
-You can ask for help on the workshop’s group or on this group
-facebook.com/groups/osc.troubleshot
+You can ask for help on the workshop’s group(If you've attended) or on our [Facebook group](https://facebook.com/groups/osc.troubleshot)
