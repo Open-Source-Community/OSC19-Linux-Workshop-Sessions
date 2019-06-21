@@ -1,4 +1,8 @@
- # A Glimpse on Linux History & Introduction to Operating Systems
+# Session#1 Part 1
+[![](https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/logo-osc.png)](https://oscgeeks.org)
+
+
+# A Glimpse on Linux History & Introduction to Operating Systems
 
 ## Operating Systems
 ### OS Layers

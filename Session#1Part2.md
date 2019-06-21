@@ -1,12 +1,8 @@
-# Session #1 Part 2
-# Linux Installation Alongside Windows
-
+# Session#1 Part 2
 [![](https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/logo-osc.png)](https://oscgeeks.org)
 
-# Summary
-   - Choosing a distribution
-   - Understanding and Preparing the PC
-   - Installing GNU/Linux
+
+# Linux Installation Alongside Windows
 
 ## Choosing a Suitable Distribution
 
