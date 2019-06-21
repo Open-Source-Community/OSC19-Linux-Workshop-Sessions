@@ -33,7 +33,7 @@ The terminal emulator is a great way to connect to a shell without having to clo
 
 And it looks something like this:
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/terminal_emulator.jpg) ![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/terminal_emulator_2.jpg)
+![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/terminal_emulator.png) ![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/terminal_emulator_2.png)
 
 
 ## Ways to open a terminal
