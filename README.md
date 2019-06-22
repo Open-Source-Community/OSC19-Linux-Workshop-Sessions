@@ -26,7 +26,7 @@ _________________
 ### Session 3
 #### Part 1: File and Text Manipulation, IO Redirection, File Permissions
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%203/Session%233Part1.pdf)
-- MD
+- [MD](https://github.com/7azoma/OSC19-Linux-Workshop-Sessions/blob/master/Session%233Part1.md)
 
 #### Part 2: Users and Groups, Package Managers, Managing Processes and Services
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%203/Session%233Part2.pdf)
