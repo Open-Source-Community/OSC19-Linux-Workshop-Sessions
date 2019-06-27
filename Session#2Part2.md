@@ -1,6 +1,6 @@
-# The Manual Pages, Links, &Managing Directories and Files #
+# Session2Part2 #
 [![](https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/logo-osc.png)](https://oscgeeks.org)
-
+# The Manual Pages, Links, &Managing Directories and Files #
 ----
 ### Summary ###
     1. Man Pages
