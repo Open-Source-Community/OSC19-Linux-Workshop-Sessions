@@ -21,7 +21,7 @@ _________________
 
 #### Part 2: Using man and info, Managing Directories and Files, Links
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%202/Session%232Part2.pdf)
-- MD
+- [MD](https://github.com/omarshagar/OSC19-Linux-Workshop-Sessions/blob/master/Session%232Part2.md)
 _________________
 ### Session 3
 #### Part 1: File and Text Manipulation, IO Redirection, File Permissions
