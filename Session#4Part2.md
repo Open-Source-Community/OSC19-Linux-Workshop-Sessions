@@ -1,6 +1,6 @@
 # Session#4 Part 2
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/logo-osc.png)
+![](./Artwork/Session%204/logo-osc.png)
 
 # Managing a Remote Shell
 
@@ -16,7 +16,7 @@ To connect to a server you should know its address(ip) or name (DNS server will 
 Assume we have host : ``127.0.0.1`` and user : ``user1`` with password : ``pass``
 using ***ssh*** to connect to the server : ``ssh user1@127.0.0.1``
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/login%20ssh.png)
+![](./Artwork/Session%204/login%20ssh.png)
 
 ### SSH-KEYGEN
 
@@ -31,7 +31,7 @@ We want to create keys to log in  ``127.0.0.1`` with ``rsa``  algorithm.
 
 Using ***ssh-keygen*** : ``ssh-keygen -t rsa``
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/ssh-keygen.png)
+![](./Artwork/Session%204/ssh-keygen.png)
 
 This will create 2 keys (public/private) under ``~/.ss/`` directory.
 
@@ -54,7 +54,7 @@ To copy from client to server :
 
 >**Note:** we need to copy the public key to the server and put it in ***.ssh/authorized_keys*** file. If it doesm't exist create it.
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/scp.png)
+![](./Artwork/Session%204/scp.png)
 
 After that we will go to ``/etc/ssh/sshd_config`` and change 3 things to **no** :
 
@@ -78,7 +78,7 @@ When you type ``ifconfig``
 
 It will provide you with 3 interfaces information.
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/ifconfig.png)
+![](./Artwork/Session%204/ifconfig.png)
 
 **eth0 ->**     This for wired network
 **lo ->**         This for the internal device network. [For more about lo](https://www.webopedia.com/TERM/L/loopback.html)
@@ -86,7 +86,7 @@ It will provide you with 3 interfaces information.
 
 Let's take a close look in **wlan0** interface :
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/wlan.png)
+![](./Artwork/Session%204/wlan.png)
 
 **UP ->** means it's enable
 **BROADCAST ->** means it's suppoet broadcasting
@@ -94,27 +94,27 @@ Let's take a close look in **wlan0** interface :
 **MULTICAST ->** means it's support multicasting
 **MTU ->** it's the size of transmission unit (frame/packet)
 **INET ->** it's the local network ip
-**NETMASK ->** it's the netmask for the network. [for more info](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%234Part1.md#subnet-masking)
+**NETMASK ->** it's the netmask for the network. [for more info](./Session%234Part1.md#subnet-masking)
 **BROADCAST ->** it's the broadcast address
 
 ### Assigning IP
 
 ``ifconfig <interface_name> <new_ip> netmask <netmask_address>``
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/assign%20ip.png)
+![](./Artwork/Session%204/assign%20ip.png)
 
 > **Note:** this will last until you close or reboot the system
 
 ***To active or inactive interface : *** ``sudo ifconfig <interface_name> up/down``
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/ifconfig%20down.png)
+![](./Artwork/Session%204/ifconfig%20down.png)
 
 ## Ping
 
 This command test the connectivity between 2 hosts.
 We can use ``ping`` with ``-c`` option to specifiy the number of package will be sent. ``ping -c 5 www.google.com``
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/ping.png)
+![](./Artwork/Session%204/ping.png)
 
 ## Traceroute
 
@@ -122,7 +122,7 @@ This command show you the road to reach the host and the number of hops it pass 
 
 ``traceroute www.google.com``
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/traceroute.png)
+![](./Artwork/Session%204/traceroute.png)
 
 ## NSLOOKUP
 
@@ -130,7 +130,7 @@ this command search for the ip of the given name
 
 ``nslookup www.google.com``
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/nslookup.png)
+![](./Artwork/Session%204/nslookup.png)
 
 ## MTR
 
@@ -138,7 +138,7 @@ This command combines the functionality of the traceroute and pin programs in a 
 
 ``mtr www.google.com``
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/mtr.png)
+![](./Artwork/Session%204/mtr.png)
 
 ## Hostname
 
@@ -157,7 +157,7 @@ This command is port scanner
 
 Let's scan google ports : ``nmap www.google.com``
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/nmap.png)
+![](./Artwork/Session%204/nmap.png)
 
 >**Importan Note:** every command has man options try to have fun with these options and search for they in man pages.
 
@@ -171,31 +171,31 @@ In linux there are many important files to configure a network some of it are :
 
  It has ips of the local hosts
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/hosts.png)
+![](./Artwork/Session%204/hosts.png)
 
 ### /etc/protocols 
 
 It has protocols and their usage
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/protocols.png)
+![](./Artwork/Session%204/protocols.png)
 
 ### /etc/services
 
 It has tcp/udp services and their ports
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/services.png)
+![](./Artwork/Session%204/services.png)
 
 ### /etc/resolve.conf 
 
 It has the ips of DNS servers
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/resolve.png)
+![](./Artwork/Session%204/resolve.png)
 
 ### /etc/NetworkManager/system-connections/  
 
 This directory has all information about network you have logged in before.
 
-![](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%204/info%20of%20network.png)
+![](./Artwork/Session%204/info%20of%20network.png)
 
 
 

@@ -15,17 +15,17 @@ They’re a set of pages that explain what every command on the system does, wha
 This will show you the manual of the “man” command.
 You can use the arrow keys to navigate the pages and you can hit **q** to quit or **h** for help.
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/man%20page.png)
+![](./Artwork/Session%202/man%20page.png)
 
 If you want to search for a specific word you can press slash (/) then type inthe keyword and then press enter.
 
 **Example**: ``/sections`` will make you search for “sections”.
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/search%20in%20man%20page.png)
+![](./Artwork/Session%202/search%20in%20man%20page.png)
 
 This indeed does bring up the first occurrence of the word ***"sections"***.
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/searched%20words.png)
+![](./Artwork/Session%202/searched%20words.png)
 
 * Note: You can also use ``info`` and ``--help`` to get information about a command.
 
@@ -39,7 +39,7 @@ If you need to do a specific task but don’t know which command can do it:
 
 **Example**: ``man -k "rename"``
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/apropos.png)
+![](./Artwork/Session%202/apropos.png)
 
 As you can see, all of these are commands that can rename something.
 Which one youc choose is up to you. You can use man pages to know more about these commands and select the suitable one for your case.
@@ -48,7 +48,7 @@ Which one youc choose is up to you. You can use man pages to know more about the
 
 **Example:** ``whatis mv``
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/whatis.png)
+![](./Artwork/Session%202/whatis.png)
 
 -----------------
 ## Managing Directories and Files
@@ -76,8 +76,8 @@ ______
 
 **Example:**
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/make%20dir.png)
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/make%20dir%202%20words.png)
+![](./Artwork/Session%202/make%20dir.png)
+![](./Artwork/Session%202/make%20dir%202%20words.png)
 
 **Note: We use double quotes ``“ ”`` if the name of the directory has more than one word.
 
@@ -85,11 +85,11 @@ This is to avoid making the shell interpret the 2 words as 2 separate arguments.
 
 If you want to create more than one directory at a time you can do the following:
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/make%20dirssss.png)
+![](./Artwork/Session%202/make%20dirssss.png)
 
 Let's check:
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/ls%20-l.png)
+![](./Artwork/Session%202/ls%20-l.png)
 
 
 
@@ -107,7 +107,7 @@ To copy files you can use:``cp``
 
 To copy a file, the following syntax can be used:``cp <source file> <destination file>``
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/copy.png)
+![](./Artwork/Session%202/copy.png)
 
 ## Renaming and Moving Files ##
 To rename a file use: ``mv``
@@ -115,14 +115,14 @@ To rename a file use: ``mv``
 
 Create a file that is called file1 and rename it to textfile.
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/remane%20file.png)
+![](./Artwork/Session%202/remane%20file.png)
 
 To move “cut” a file use`` mv``
 
 **Example:**
 Moving "textfile" from ~/one to ~/two
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/move%20file.png)
+![](./Artwork/Session%202/move%20file.png)
 
 ### Deleting Files and Directories
 You can delete a file or a directory using the ```rm``` command.
@@ -172,7 +172,7 @@ We have a file A.txt if we create a soft link and a hard link both pointing to i
 
 We can simply say that a soft link is just a file that points to another, while a hard link is a xopy of a file that is always sychronised with it.
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/remove.png)
+![](./Artwork/Session%202/remove.png)
 
 ***Note: You can think of links like pointers in programming languages, if you’re familiar with them.
 
@@ -187,7 +187,7 @@ Make a link using the`` ln ``command.
 
 The option ``-s`` makes the link a soft link and not a hard one.
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/soft%20link.png)
+![](./Artwork/Session%202/soft%20link.png)
 
 You can see that indeed, S_Link is pointing to File.txt
 
@@ -201,7 +201,7 @@ You can see that indeed, S_Link is pointing to File.txt
 
 Make a hard link using the ``ln`` command.
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/hard%20link.png)
+![](./Artwork/Session%202/hard%20link.png)
 
 In this example you can see that H_Link is treated as a normal file, it is just linked to File.txt. After editing File.txt, H_Link was edited too.
 
@@ -212,10 +212,10 @@ To delete a link you can use ``unlink`` or ``rm``
 
 **Example:**
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/unlink.png)
+![](./Artwork/Session%202/unlink.png)
 
 And since a link is a file after all, you can also delete it with ```rm```.
 
 **Example:**
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/remove%20link.png)
+![](./Artwork/Session%202/remove%20link.png)

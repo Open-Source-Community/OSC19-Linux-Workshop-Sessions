@@ -66,8 +66,8 @@ This type of firmware uses **MBR** (Master Boot Record) partition table.
 **A Partition table that allows the creation of 4 primary partitions that can include a maximum count of one `Extended Partition` which is a type of partitions that includes `Logical Partitions` that functions like a primary partitions.**
 
 * #### UEFI (Unified Extensible Firmware Interface)
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%201/UEFI%20Screen.png)
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%201/The%20Cooler%20UEFI%20Screen.png)
+![](./Artwork/Session%201/UEFI%20Screen.png)
+![](./Artwork/Session%201/The%20Cooler%20UEFI%20Screen.png)
 
 This type of firmware uses **GPT** (GUID Partition Table) as the default partition table.
 
@@ -109,13 +109,13 @@ You can check this guide in Arabic for more details at oscgeeks.org/Linux
 (If you already had the installation media running, make sure you’re in the correct boot mode by restarting and choosing the correct one)
 
 2. Start the installation software `Install _____ on this PC`.
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%201/Install%20Linux%20Mint.png)
+![](./Artwork/Session%201/Install%20Linux%20Mint.png)
 
 3. Make sure to check this box if you don’t mind using some proprietary software, a lot of them may be essential for your system.
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%201/Install%20third-party%20software.png)
+![](./Artwork/Session%201/Install%20third-party%20software.png)
 
 4. You should find an option for `Install _____ alongside Windows Boot Manager` or something in a similar fashion. Select it.
-![](https://raw.githubusercontent.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/master/Artwork/Session%201/Install%20Linux%20Mint%20alongside%20Windows%2010.png)
+![](./Artwork/Session%201/Install%20Linux%20Mint%20alongside%20Windows%2010.png)
 
 5. Continue entering the required information when prompted during the installation.
 

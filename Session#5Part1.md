@@ -173,7 +173,7 @@ Write a Bash script that reads an equation in the form of "A op B" where op can 
 
 # Conditionals in BASH
 If conditions are used to control a program's flow, as in they control what a program does and when.
-![Conditionals](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/Conditionals.png)
+![Conditionals](./Artwork/Session%205/Conditionals.png)
 
 - Conditionals in C 
 ```
@@ -282,7 +282,7 @@ triangle, identify whether the triangle is Scalene, Isosceles, or Equilateral.
 - There are 3 types of loops in Bash (for, while, and until).
 - The following slides cover for and while loops only, as until loops are very similar to while and are not used *that* differently.
 
-![Loops](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/Loops.png)
+![Loops](./Artwork/Session%205/Loops.png)
 
 ### For Loops
 For loops are sed to loop in a certain range/array.
@@ -404,7 +404,7 @@ Try solving it on your own, if you can’t you can search for the “`bc`” [co
 # Functions in BASH
 
 Which do you think is easier and more organised?
-![Function Comparison](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/FunctionsComparison.png)
+![Function Comparison](./Artwork/Session%205/FunctionsComparison.png)
 
 You may have guessed that B is more organised and easier to write, which is true as it contains the least amount of repeated code.
 
@@ -442,7 +442,7 @@ function hello
 
 hello
 ```
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/HelloExample.png)
+![](./Artwork/Session%205/HelloExample.png)
 
 #### Passing arguments to a function
 To use the arguments as variables, you can access their values by using $X where X is the order of the argument passed to the Fn.
@@ -457,7 +457,7 @@ function add
 add 3 5
 ```
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/ArgumentsExample.png)
+![](./Artwork/Session%205/ArgumentsExample.png)
 
 #### Let's Solve!
 ##### [Looping with Numbers](https://www.hackerrank.com/challenges/bash-tutorials---looping-with-numbers/problem):
@@ -483,7 +483,7 @@ Explanation of the fork bomb:
 :          # Function call
 ```
 
-![ForkBomb](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/ForkBomb.png)
+![ForkBomb](./Artwork/Session%205/ForkBomb.png)
 # References
 
 - [LearnShell](http://www.learnshell.org/en/)

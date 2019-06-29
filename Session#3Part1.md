@@ -16,7 +16,7 @@ To start using nano we can simply run it from the terminal by running the comman
 
 We can write whatever text we want and once we’re done we can exit using the shortcut Ctrl + x, we’ll be prompted to enter the name of the file to save as.
 
-![Nano Interface](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/NanoInterface.png)
+![Nano Interface](./Artwork/Session%203/NanoInterface.png)
 
 Another way to open nano is to write nano in the terminal followed by the file name or the absolute path of the file we want to edit and if the file doesn’t exist it will be created.
 
@@ -37,7 +37,7 @@ We can use some options to format the output, we can use:
 
 ``-b`` to only number lines containing text like the example shown in the photo.
 
-![Cat Example](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/catExample.png)
+![Cat Example](./Artwork/Session%203/catExample.png)
 
 To print the content of more than one file (concatinate) using cat, just add more arguments to the command:
 
@@ -74,15 +74,15 @@ We can compile C++ files by running g++ followed by the file name, by default an
 
 Example: main.cpp
 
-![cpp File Example](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/cppFileExample.png)
+![cpp File Example](./Artwork/Session%203/cppFileExample.png)
 
 ``g++ main.cpp``
 
-![Compile](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/compile.png)
+![Compile](./Artwork/Session%203/compile.png)
 
 Now the file a.out exists, it will be used to run our program. It is marked green as it is executable.
 
-![Run](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/run.png)
+![Run](./Artwork/Session%203/run.png)
 
 
 Note: you can use ‘ ./file ’ to run an executable file from the Linux shell.
@@ -107,7 +107,7 @@ and output streams, they are used to take input from the user “standard
 input(stdin)”, and give the user output “standard output(stdout) and standard
 error(stderr)”.
 
-![Stream Diagram](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/streamDiagram.png)
+![Stream Diagram](./Artwork/Session%203/streamDiagram.png)
 
 These channels are the way to interact with any program, for example in Linux we
 can give the computer orders in the form of commands through the shell we call
@@ -116,11 +116,11 @@ computer responds with either stdout or stderr depending on the input.
 
 Running ``ls`` gives normal output, thus channeled to stdout:
 
-![ls Example](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/lsExample.png)
+![ls Example](./Artwork/Session%203/lsExample.png)
 
 Running ``hello`` or any unknown command or syntax will give an error, thus channeled to stderr:    
 
-![commandNotFound Example](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/commandNotFoundExample.png)
+![commandNotFound Example](./Artwork/Session%203/commandNotFoundExample.png)
 
 Notice that in the previous examples, both the output and the error were printed
 to terminal as we haven’t redirected either of them.
@@ -131,7 +131,7 @@ We can redirect stdout into file by using the greater than sign **>**.
 
 Example:
 
-![IO Redirection](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/IORedirectionExample.png)
+![IO Redirection](./Artwork/Session%203/IORedirectionExample.png)
 
 Notice that the output of the command was printed into the file instead of the
 terminal.
@@ -140,7 +140,7 @@ We can redirect stderr into file by using the sign **2>**.
 
 Example:
 
-![IO Redirection](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/stdErrExample.png)
+![IO Redirection](./Artwork/Session%203/stdErrExample.png)
 
 Notice that the output here stayed on the terminal although we redirected stdout, that is because the type of the output is stderr. That’s why when we used **2>** it redirected it into a file, but **>** didn’t.
 
@@ -152,7 +152,7 @@ You can also redirect input from a file into a program using the smaller than si
 
 **Example:** ``./program < inputfile.txt``
 
-![Pipe Example](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/redirectDiagram.png)
+![Pipe Example](./Artwork/Session%203/redirectDiagram.png)
 
 ### Piping **‘ | ’**
 
@@ -163,13 +163,13 @@ for the following command.
 
 Example: ```ls -l | grep “Desktop”```
 
-![Pipe Example](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/pipeExample.png)
+![Pipe Example](./Artwork/Session%203/pipeExample.png)
 
 Executing this command will first list the directories in the current location and take this output rather than printing it, it passes it to the grep utility to filter out the lines that don’t contain “Desktop”.
 
 We can use the pipe as many times as we want and to perform multiple commands sequentially with the I/O relations.
 
-![Pipe Example](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/pipeDiagram.png)
+![Pipe Example](./Artwork/Session%203/pipeDiagram.png)
 
 The figure above illustrates how piping works.
 
@@ -188,11 +188,11 @@ The three permissions we have are:
 
 To list permissions we use the command `ls` with the option `-l` which lists the files and directories in a list format.
 
-![ls Permissions](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/lsPermisionsExample.png)
+![ls Permissions](./Artwork/Session%203/lsPermisionsExample.png)
 
 We can see at the beginning of every line there are a few sections:
 
-![Permissions Prefix](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/permisionPrefix.png)
+![Permissions Prefix](./Artwork/Session%203/permisionPrefix.png)
 
 The first column is our focus
 
@@ -254,17 +254,17 @@ The owner of the file is usually the user who created it or anyone who was given
 
 The third and fourth columns of the output of the ``ls -l`` command show the user owner and the group owner of the file respectively.
 
-![Owners and Groups](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/changingOwnerShip.png)
+![Owners and Groups](./Artwork/Session%203/changingOwnerShip.png)
 
 You can change the ownership of the file by using the command ``chown`` to change the user ownership and ``chgrp`` to change the group ownership.
 
 **Example:** ``chown lightdm dir2``
 
-![chown example](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/chownExample1.png)
+![chown example](./Artwork/Session%203/chownExample1.png)
 
 **Example:** ``chgrp wheel dir1``
 
-![chgrp example](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/chownExample2.png)
+![chgrp example](./Artwork/Session%203/chownExample2.png)
 
 # Test yourself:
 
