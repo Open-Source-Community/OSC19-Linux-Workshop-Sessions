@@ -9,7 +9,8 @@ It stands for manual pages.
 They’re a set of pages that explain what every command on the system does, what options are available, what arguments it can take, and shows you how to use them.
 
 **To open a man page type:**`` man [COMMAND NAME]``
->>*Example:* ``man man``
+
+**Example**: ``man man``
 
 This will show you the manual of the “man” command.
 You can use the arrow keys to navigate the pages and you can hit **q** to quit or **h** for help.
@@ -18,7 +19,7 @@ You can use the arrow keys to navigate the pages and you can hit **q** to quit o
 
 If you want to search for a specific word you can press slash (/) then type inthe keyword and then press enter.
 
->*Example:*``/sections`` will make you search for “sections”.
+**Example**: ``/sections`` will make you search for “sections”.
 
 ![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/search%20in%20man%20page.png)
 
