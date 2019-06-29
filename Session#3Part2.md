@@ -16,7 +16,7 @@ id <username>
 ```
 for example
 
-![Image of id username](./Artwork/Session%203/username.png)
+![Image of id username](./Images/Session%203/username.png)
 
 A userID is a positive integer assigned to the user to identify it.
 Root will have the userID 0.
@@ -29,7 +29,7 @@ programs, numbered from 1 up to 999, real user accounts start from the UID 1000.
 
 The users of the system are stored in the /etc/passwd file.
 
-![Pic of etc/passwd](./Artwork/Session%203/etc.PNG)
+![Pic of etc/passwd](./Images/Session%203/etc.PNG)
 
 Looking at the content of the
 file here, we can see that the
@@ -61,7 +61,7 @@ sudo useradd -m <username>
 If we create a user named temp and check the content of the etc/passwd file
 again:
 
-![Picture of etc/passwd](./Artwork/Session%203/etc%202.PNG)
+![Picture of etc/passwd](./Images/Session%203/etc%202.PNG)
 
 
 To delete a user, simply enter the command
@@ -86,14 +86,14 @@ su username
 ```
 Then you’ll be prompted to enter the password
 
-![image of switch user](./Artwork/Session%203/su%201.PNG)
+![image of switch user](./Images/Session%203/su%201.PNG)
 
 To return to original user enter the command
 ```
 exit
 ```
 
-![image of su 2](./Artwork/Session%203/su%202.PNG)
+![image of su 2](./Images/Session%203/su%202.PNG)
 
 ### Groups
 
@@ -170,7 +170,7 @@ To install a package, we use the command
 ```
 sudo apt install packages_names
 ```
-![image of package installation](./Artwork/Session%203/install%20package.PNG)
+![image of package installation](./Images/Session%203/install%20package.PNG)
 
 In this example, vim-runtime is considered a dependancy, as vim needs it to work, the package manager notified us that it’ll be installed alongside vim.
 
@@ -186,7 +186,7 @@ To search for packages, enter the command
 sudo apt search <keyword>
 ```
 
-## ![Image of package search](./Artwork/Session%203/search.PNG)
+## ![Image of package search](./Images/Session%203/search.PNG)
 
 ### Updating and Upgrading
 
@@ -212,14 +212,14 @@ Foreground processes are programs that are currently being used by the user, suc
 
 The ```ps``` command is responsible for telling you all the processing currently running on the terminal
 
-![Image of PS](./Artwork/Session%203/PS.PNG)
+![Image of PS](./Images/Session%203/PS.PNG)
 
 - PID is short for Process ID.
 - ```ps aux``` will show you ALL of the processes running on the system.
 
 The ```top``` command will tell you all the current processes running in the system, and update them if any processes are killed or changed.
 
-![Image of top](./Artwork/Session%203/top.PNG)
+![Image of top](./Images/Session%203/top.PNG)
 
 If you look at the figure above, you’ll see a command with the PID 1 called systemd, this is the initialisation service responsible for the whole system after booting.
 
@@ -237,7 +237,7 @@ Or we can use the command
 ```
 killall <process_name>
 ```
-![Image of kill](./Artwork/Session%203/kill.PNG)
+![Image of kill](./Images/Session%203/kill.PNG)
 
 Note: ‘#’means the start of a comment in the Linux shell.
 

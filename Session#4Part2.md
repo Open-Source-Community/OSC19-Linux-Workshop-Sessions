@@ -18,7 +18,7 @@ Assume we have host : ``127.0.0.1`` and user : ``user1`` with password : ``pass`
 
 using ***ssh*** to connect to the server : ``ssh user1@127.0.0.1``
 
-![](./Artwork/Session%204/login%20ssh.png)
+![](./Images/Session%204/login%20ssh.png)
 
 ### SSH-KEYGEN
 
@@ -33,7 +33,7 @@ We want to create keys to log on to  ``127.0.0.1`` with ``rsa``  algorithm.
 
 Using ***ssh-keygen*** : ``ssh-keygen -t rsa``
 
-![](./Artwork/Session%204/ssh-keygen.png)
+![](./Images/Session%204/ssh-keygen.png)
 
 This will create 2 keys (public/private) under ``~/.ssh/`` directory.
 
@@ -56,7 +56,7 @@ To copy from client to server :
 
 >**Note:** we need to copy the public key to the server and put it in ***.ssh/authorized_keys*** file. If it doesn't exist, create it.
 
-![](./Artwork/Session%204/scp.png)
+![](./Images/Session%204/scp.png)
 
 After that we will go to ``/etc/ssh/sshd_config`` and change 3 things to **no** :
 
@@ -84,7 +84,7 @@ When you type ``ifconfig``
 
 It will provide you with 3 interfaces information.
 
-![](./Artwork/Session%204/ifconfig.png)
+![](./Images/Session%204/ifconfig.png)
 
 **eth0 ->**     This for wired network
 **lo ->**         This for the internal device network. [For more about lo](https://www.webopedia.com/TERM/L/loopback.html)
@@ -92,7 +92,7 @@ It will provide you with 3 interfaces information.
 
 Let's take a close look in **wlan0** interface :
 
-![](./Artwork/Session%204/wlan.png)
+![](./Images/Session%204/wlan.png)
 
 - **UP ->** it's enabled
 - **BROADCAST ->** it supports broadcasting
@@ -107,13 +107,13 @@ Let's take a close look in **wlan0** interface :
 
 ``ifconfig <interface_name> <new_ip> netmask <netmask_address>``
 
-![](./Artwork/Session%204/assign%20ip.png)
+![](./Images/Session%204/assign%20ip.png)
 
 > **Note:** this will last until you close or reboot the system
 
 ***To active or inactive interface : *** ``sudo ifconfig <interface_name> up/down``
 
-![](./Artwork/Session%204/ifconfig%20down.png)
+![](./Images/Session%204/ifconfig%20down.png)
 
 ## Ping
 
@@ -121,7 +121,7 @@ This command tests the connectivity between 2 hosts.
 
 We can use ``ping`` with ``-c`` option to specifiy the number of package will be sent. ``ping -c 5 www.google.com``
 
-![](./Artwork/Session%204/ping.png)
+![](./Images/Session%204/ping.png)
 
 ## Traceroute
 
@@ -129,7 +129,7 @@ This command show you the road to reach the host and the number of hops it passe
 
 ``traceroute www.google.com``
 
-![](./Artwork/Session%204/traceroute.png)
+![](./Images/Session%204/traceroute.png)
 
 ## NSLOOKUP
 
@@ -137,7 +137,7 @@ This command searches for the ip of the given name
 
 ``nslookup www.google.com``
 
-![](./Artwork/Session%204/nslookup.png)
+![](./Images/Session%204/nslookup.png)
 
 ## MTR
 
@@ -145,7 +145,7 @@ This command combines the functionality of the traceroute and ping programs in a
 
 ``mtr www.google.com``
 
-![](./Artwork/Session%204/mtr.png)
+![](./Images/Session%204/mtr.png)
 
 ## Hostname
 
@@ -164,7 +164,7 @@ This command is port scanner
 
 Let's scan google ports : ``nmap www.google.com``
 
-![](./Artwork/Session%204/nmap.png)
+![](./Images/Session%204/nmap.png)
 
 >**Importan Note:** every command has options, try to have fun with these options and search for them in man pages.
 
@@ -178,28 +178,28 @@ In linux there are many important files to configure a network some of them are 
 
  It has ips of the local hosts
 
-![](./Artwork/Session%204/hosts.png)
+![](./Images/Session%204/hosts.png)
 
 ### /etc/protocols 
 
 It has protocols and their usage
 
-![](./Artwork/Session%204/protocols.png)
+![](./Images/Session%204/protocols.png)
 
 ### /etc/services
 
 It has tcp/udp services and their ports
 
-![](./Artwork/Session%204/services.png)
+![](./Images/Session%204/services.png)
 
 ### /etc/resolve.conf 
 
 It has the ips of DNS servers
 
-![](./Artwork/Session%204/resolve.png)
+![](./Images/Session%204/resolve.png)
 
 ### /etc/NetworkManager/system-connections/  
 
 This directory has all information about network you have logged in before.
 
-![](./Artwork/Session%204/info%20of%20network.png)
+![](./Images/Session%204/info%20of%20network.png)

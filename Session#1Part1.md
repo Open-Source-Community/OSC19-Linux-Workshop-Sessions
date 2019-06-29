@@ -8,7 +8,7 @@
 ### OS Layers
 An operating system is the main piece of software needed to run a computer, without it the computer won’t function. Here’s a simplified view:
 
-![OS Layers](./Artwork/Session%201/Layers.png)
+![OS Layers](./Images/Session%201/Layers.png)
 
 **The GUI:** Graphical User Interface, used to allow the user to interact with the system by using a graphical interface.
 
@@ -19,7 +19,7 @@ An operating system is the main piece of software needed to run a computer, with
 ### Boot Process
 The boot process consists of many layers executing each other to load the operating system finally.
 
-![Boot Process Order](./Artwork/Session%201/UEFI.png)
+![Boot Process Order](./Images/Session%201/UEFI.png)
 
 
 **BIOS/UEFI:** Checks that the system is working properly and then executes the MBR/EFI.
@@ -32,7 +32,7 @@ The boot process consists of many layers executing each other to load the operat
 
 ## Open Source and Linux History
 
-![Timeline](./Artwork/Session%201/Timeline.png)
+![Timeline](./Images/Session%201/Timeline.png)
 
 **Note:** The *correct term* is GNU/Linux not just Linux or GNU, because it is the GNU operating system using the Linux kernel. 
 We just say Linux because it is shorter, easier to say, and more popular.
@@ -53,7 +53,7 @@ The Debian family started with the home user in mind, the community wanted to ma
 
 Distributions such as Arch Linux, openSUSE, SLES, Gentoo, and many others were made for specific use cases or optimisations based on what the community wanted.
 
-![Distributions](./Artwork/Session%201/Distros.png)
+![Distributions](./Images/Session%201/Distros.png)
 
 [Here's a link to a more full and HUGE Linux family tree.](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg)
 ## Why Linux?

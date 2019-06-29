@@ -11,9 +11,9 @@ A Free Open Source DVCS ”distributed version control system ”
   - Saves the new file as a Whole "easier to retrive lost data"
   - Each Snapshot contains references to the files "to save space uses ref. only"
 - #### Stores new versions of files only
-  ![N|Solid](./Artwork/Session%206/saves_new_ver_only.png)
+  ![N|Solid](./Images/Session%206/saves_new_ver_only.png)
 - #### Each snapshot contains each file
-  ![N|Solid](./Artwork/Session%206/snapshots.png)
+  ![N|Solid](./Images/Session%206/snapshots.png)
 - #### Everything is local “distributed”
     - Each Computer has all the history of the project
     - Makes it faster and easeir to contribute 
@@ -69,7 +69,7 @@ $ git clone <URL># to Clone/Copy exsiting repository
 ```
  `<URL>`: can be git, shh, http, https, file , etc 
 - ## Recording Changes to the Repository 
-    ![N|Solid](./Artwork/Session%206/pasted%20image%200.png)
+    ![N|Solid](./Images/Session%206/pasted%20image%200.png)
     - #### Checking status of your files
         ```sh
         $ git status`
@@ -243,20 +243,20 @@ $ git clone <URL># to Clone/Copy exsiting repository
 ## Creating a New Branch 
 
 - ##### git branch testing
-![N|Solid](./Artwork/Session%206/Branching.png)
+![N|Solid](./Images/Session%206/Branching.png)
     
 - #### switching Branch 
             - “git checkout testing”
-![N|Solid](./Artwork/Session%206/Switching.png)
+![N|Solid](./Images/Session%206/Switching.png)
     
 - #### Commiting in a New Branch
-![N|Solid](./Artwork/Session%206/Commiting.png)
+![N|Solid](./Images/Session%206/Commiting.png)
     
 - #### Return to master Branch   
-![N|Solid](./Artwork/Session%206/Return.png)
+![N|Solid](./Images/Session%206/Return.png)
  
 - #### Commiting again Branch
- ![N|Solid](./Artwork/Session%206/Commiting_agin.png)
+ ![N|Solid](./Images/Session%206/Commiting_agin.png)
 
 ## Merging Branching
 - Fast-forward
@@ -266,9 +266,9 @@ $ git clone <URL># to Clone/Copy exsiting repository
 
 ## Remote Branches
      
-![N|Solid](./Artwork/Session%206/Remote_br.png)
-          ![N|Solid](./Artwork/Session%206/Remote_br2.png)
-                ![N|Solid](./Artwork/Session%206/Remote_br3.png)
+![N|Solid](./Images/Session%206/Remote_br.png)
+          ![N|Solid](./Images/Session%206/Remote_br2.png)
+                ![N|Solid](./Images/Session%206/Remote_br3.png)
 
 ## Local Git Repositories 
 - #### $ git daemon
