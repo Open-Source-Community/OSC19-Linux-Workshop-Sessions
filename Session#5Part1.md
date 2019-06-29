@@ -317,7 +317,7 @@ While loops keep repeating a block of commands until the condition becomes false
 
 - While loop in C 
 ```C
-int x = ;
+int x = 1;
 
 while (x < 11)
 {
