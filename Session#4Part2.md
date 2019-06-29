@@ -1,6 +1,6 @@
 # Session#4 Part 2
 
-![](./Artwork/Session%204/logo-osc.png)
+[![](https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/logo-osc.png)](https://oscgeeks.org)
 
 # Managing a Remote Shell
 
