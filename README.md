@@ -49,7 +49,7 @@ _________________
 
 #### Part 2: Cron and File Archiving
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%205/Session%235Part2.pdf)
-- MD
+- [MD](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%235Part2.md)
 _________________
 ### Session 6 (Git Version Control)
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%206/Session%236.pdf)
