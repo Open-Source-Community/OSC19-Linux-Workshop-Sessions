@@ -75,7 +75,7 @@ $ git clone <URL># to Clone/Copy exsiting repository
         $ git status`
         $ git status -s # Summarized
         ```
-        - `??`    “ untraked ”
+        - `??`    “ untracked ”
         - A     “ staged ”
         - M     “ Modified staged “ 
         - `M`    “ Modified untracked “
@@ -158,11 +158,11 @@ $ git clone <URL># to Clone/Copy exsiting repository
         ```
     - ### Commit History
         ```sh
-        $git log
+        $ git log
         $ git log -p
         $ Git log -<number>
         $ git log --since <date>
-        $git log --until <date>
+        $ git log --until <date>
         ```
         `<data>`or `<number>` EX : “ 2008-01-15” or  EX : "2 years 1 day 3 minutes ago" 
 
@@ -175,11 +175,11 @@ $ git clone <URL># to Clone/Copy exsiting repository
 - git reset <files>
 
 ## Amend
-- git commit --amnend
+- git commit --amend
          - Used for 
          - to change your latest log message
-            - to make modifications to the most recent commit
-            - Use git rebase to combine commits and modify history of a branch.
+         - to make modifications to the most recent commit
+         - Use git rebase to combine commits and modify history of a branch.
 
 ## Undo Commit
 ``` sh
@@ -203,42 +203,42 @@ $ git clone <URL># to Clone/Copy exsiting repository
         -file:///srv/git/project.git
 
 ## Showing Your Remotes
-``` sh
+```sh
     $ git remote
     $ git remote -v
- ```
+```
 ## Add Remotes
- ``` sh
+```sh
     $ git remote add <Name> <URL>
- ```
+```
 
 ## Fetching and Pulling Repositories 
-``` sh
+```sh
     $ git fetch <remote>
     $ git pull <remote> <branch>
- ```
+```
 ## Pushing into Repositories
-``` sh
+```sh
     $ git push <remote> <branch>
- ```
+```
 ## Branching
 - #### List branches
-        ``` sh
+```sh
      $ git branch
      $ git branch -a
-        ```
+```
 - #### Create new branch
-        ``` sh
-        $ git branch <new name>
-        ```
+```sh
+     $ git branch <new name>
+```
 - #### Switch branches
-        ``` sh
-        $ git Checkout <branch name>
-        ```
+```sh
+     $ git Checkout <branch name>
+```
 - #### Delete Branches
-        ``` sh
-        $ git branch -d <branches>
-        ```
+```sh
+     $ git branch -d <branches>
+```
 
 ## Creating a New Branch 
 
@@ -282,8 +282,7 @@ $ git clone <URL># to Clone/Copy exsiting repository
 
 ## git aliases
     - git  config --global alias.<name> ‘commands’
-    - git config --global alias.serve '!git daemon --base-path=. --export-all --areuseaddr --informative-errors --verbose'
-           
+    - git config --global alias.serve '!git daemon --base-path=. --export-all --areuseaddr --informative-errors --verbose' 
     - git hub or git serve
 
 ## Resources
