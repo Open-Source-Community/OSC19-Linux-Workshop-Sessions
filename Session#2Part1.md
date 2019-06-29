@@ -1,15 +1,21 @@
+# Session#2 Part 1
+[![](https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/logo-osc.png)](https://oscgeeks.org)
+
+# The Command Line & The Linux Filesystem Hierarchy
+
+
 # The Shell
 ## What is the shell ?
 
 Remembering this diagram from last session, the shell is the first layer that a user can use to interact with the
 operating system.
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/layers.jpg)
+![](./Images/Session%202/layers.jpg)
 
 
 It looks something like this:
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/Linux_shell.jpg)
+![](./Images/Session%202/Linux_shell.jpg)
 
 This is the standard __“TTY”__ shell that you can use, it is the default one you’ll find on Linux distributions that don’t have a GUI.
 
@@ -32,7 +38,7 @@ The terminal emulator is a great way to connect to a shell without having to clo
 
 And it looks something like this:
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/terminal_emulator.png) ![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/terminal_emulator_2.png)
+![](./Images/Session%202/terminal_emulator.png) ![](./Images/Session%202/terminal_emulator_2.png)
 
 
 ## Ways to open a terminal
@@ -49,8 +55,8 @@ _**Note:** The Windows key is called “Super” or “Meta” in Linux._
 ## The Command Line Prompt
 When you open the terminal you’ll see something like this:
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/command_line_prompt.jpg) 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/command_line_prompt-2.jpg)
+![](./Images/Session%202/command_line_prompt.jpg) 
+![](./Images/Session%202/command_line_prompt-2.jpg)
 
 It is prompting you to enter a command, let’s break it down:
 
@@ -76,7 +82,7 @@ When ordering the computer to do something, **i.e giving it a command**, you hav
 Just like programming languages, the Linux shell has specific syntax that you have to use. Just so that it could be understood by the shell.
 
 The syntax goes as follows:
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/command_line_syntax.jpg)
+![](./Images/Session%202/command_line_syntax.jpg)
 
 **The Command:** Intuitively, this is the command that you give to the system, i.e.
 delete, move, copy, list, etc..
@@ -91,11 +97,11 @@ delete, move, copy, list, etc..
 ```ls``` – lists the content of a directory(folder).
 
 Running the command ls does the following:
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/ls_command.jpg)
+![](./Images/Session%202/ls_command.jpg)
 
 But that format isn’t really good if you want a detailed view, so we add the ```-l``` option which makes it list the content but in a “long” form:
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/ls-l_command.jpg)
+![](./Images/Session%202/ls-l_command.jpg)
 
 Much better! Everything is clealer and organised in a list.
 
@@ -104,20 +110,20 @@ How about we take a look at the hidden files too?
 The ```-a``` option lists “all files”, this command can be shortened down to ```ls -la``` or ```ls -al```
 
 **Note: Hidden files and directories in Linux start their name with a dot”.”.**
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/ls-l-a.jpg)
+![](./Images/Session%202/ls-l-a.jpg)
 
 # Filesystems
 ## What is a filesystem?
 A filesystem is the way that the files are stored on a storage device (i.e. Hard Drive, USB Flash Drive, etc..).
 
 Each operating system uses a certain filesystem:
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/filesystem.png)
+![](./Images/Session%202/filesystem.png)
 
 **Note: Linux supports NTFS and FAT32, but Windows doesn’t support EXT4 or XFS, that’s why you can’t see the Linux partitions on Windows.**
 
 ## Windows Directory Structure
 A directory structure is the way an operating system's files are arranged displayed to the user.
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/windows_directory_structure.png)
+![](./Images/Session%202/windows_directory_structure.png)
 
 Windows, like every operating system, has a specific directory structure for its **NTFS** file system. Each disk is assigned a letter, and you browse your files based on that. 
 
@@ -136,7 +142,7 @@ root directory.
 
 #### Here’s a demonstration of the Linux Filesystem Hierarchy:
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/linux_filesystem.png)
+![](./Images/Session%202/linux_filesystem.png)
 
 From the previous, we can see that: “Everything in Linux is a file”. 
 Even devices and processes, everything is a file under the ‘/’ directory somehow.
@@ -144,7 +150,7 @@ Even devices and processes, everything is a file under the ‘/’ directory som
 **Note: C:\ and D:\ here are not accessed as C:\ or D:\\, but instead as directories under ‘/’.**
 
 **Let’s test it out!**
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/ls_root.jpg)
+![](./Images/Session%202/ls_root.jpg)
 If we list the content of the root directory using the ```ls``` command, we will find the directories in the previous diagram.
 
 Now we know what a filesystem, directory, and file are. Let’s talk about how we can access them.
@@ -154,18 +160,18 @@ Now we know what a filesystem, directory, and file are. Let’s talk about how w
 You opened a terminal, now what?
 The first thing you want to do is to know where the terminal is working:
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/pwd.jpg)
+![](./Images/Session%202/pwd.jpg)
 
 ```pwd```: Print Working Directory, tells you the directory your terminal is working in.
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/ls.jpg)
+![](./Images/Session%202/ls.jpg)
 
 Now that you know where you are in the system, you should see the content of
 the directory using the ```ls``` command.
 
 What if we wanted to enter the Pictures directory?
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/cd.jpg)
+![](./Images/Session%202/cd.jpg)
 
 ```cd```: Change Directory, changes the working directory to the specified argument.
 
@@ -191,14 +197,14 @@ Example: If the working directory is /home/osc/Pictures/, then:
 
 To verify:
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/verify_'.'_and_'..'.jpg)
+![](./Images/Session%202/verify_'.'_and_'..'.jpg)
 
 This can be a little confusing at first, so practice with yourself and maybe try drawing it on a piece of paper to visualise how things really work.
 
 ### Relative and absolute paths
 
 Let’s simplify this by taking a guy called “Jack” as an example, Jack goes to FCIS ASU every day, this is the path he takes daily:
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/relative_and_absolute_path.png)
+![](./Images/Session%202/relative_and_absolute_path.png)
 
 Jack’s route to college daily is **Home->Bus Stop->Abbassia->FCIS ASU.**
 
@@ -216,7 +222,7 @@ The same thing applies in Linux for directories and files.
 **Example:**
 In the diagram, let the working directory be /home/User1
 
-![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%202/example_absolute_and_relative_path.png)
+![](./Images/Session%202/example_absolute_and_relative_path.png)
 
 The relative path for “Videos” would be: Videos
 
