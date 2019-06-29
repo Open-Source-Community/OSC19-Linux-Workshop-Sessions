@@ -53,7 +53,7 @@ _________________
 _________________
 ### Session 6 (Git Version Control)
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%206/Session%236.pdf)
-- [MD](./Session#6.md)
+- [MD](./Session%236.md)
 _________________
 ## Credit to Moderators 
 * Ahmed Elmayyah (Satharus)

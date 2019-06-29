@@ -9,9 +9,9 @@ A Free Open Source DVCS ”distributed version control system ”
   - Saves the new file as a Whole "easier to retrive lost data"
   - Each Snapshot contains references to the files "to save space uses ref. only"
 - #### Stores new versions of files only
-  ![N|Solid](./Artwork/saves_new_ver_only.png)
+  ![N|Solid](./Artwork/Session%206/saves_new_ver_only.png)
 - #### Each snapshot contains each file
-  ![N|Solid](./Artwork/snapshots.png)
+  ![N|Solid](./Artwork/Session%206/snapshots.png)
 - #### Everything is local “distributed”
     - Each Computer has all the history of the project
     - Makes it faster and easeir to contribute 
@@ -67,7 +67,7 @@ $ git clone <URL># to Clone/Copy exsiting repository
 ```
  `<URL>`: can be git, shh, http, https, file , etc 
 - ## Recording Changes to the Repository 
-    ![N|Solid](./Artwork/pasted%20image%200.png)
+    ![N|Solid](./Artwork/Session%206/pasted%20image%200.png)
     - #### Checking status of your files
         ```sh
         $ git status`
