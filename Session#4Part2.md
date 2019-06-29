@@ -8,12 +8,14 @@
 
 It stands for Secure SHell
 You can use it to connect to remote device. 
-To connect to a server you should know its address(ip) or name (DNS server will resolve the name to ip address) and have a user in it.
-**Usage** : ``ssh <user_name>@<host> -p <port_number>(defualt 22)``
+To connect to a server you should know its address(ip) or name (DNS server will resolve the name to ip address) and have a user on it.
+
+**Usage** : ``ssh <user_name>@<host> -p <port_number>(default 22)``
 
 **Example:**
 
 Assume we have host : ``127.0.0.1`` and user : ``user1`` with password : ``pass``
+
 using ***ssh*** to connect to the server : ``ssh user1@127.0.0.1``
 
 ![](./Artwork/Session%204/login%20ssh.png)
@@ -27,20 +29,20 @@ You can you thoses keys with ***ssh*** to connect the server instead the passwor
  
  **Example:**
 
-We want to create keys to log in  ``127.0.0.1`` with ``rsa``  algorithm.
+We want to create keys to log on to  ``127.0.0.1`` with ``rsa``  algorithm.
 
 Using ***ssh-keygen*** : ``ssh-keygen -t rsa``
 
 ![](./Artwork/Session%204/ssh-keygen.png)
 
-This will create 2 keys (public/private) under ``~/.ss/`` directory.
+This will create 2 keys (public/private) under ``~/.ssh/`` directory.
 
 We'll change the permission of the ``.ssh/`` directory using  ``chmod``
 ``sudo chmod -R 700 ~/.ssh/``
 
 > **Note:** -R means recursively to change permission for all files and directories under .ssh/
 
-After we create the keys we need to put the public key in the server side to make the server recognize us. There are many ways to do this but we will use ``scp``
+After we create the keys we need to put the public key in the server side to make the server recognize us. There are many ways to do this but we will use ``scp``.
 
 ### SCP
 
@@ -52,7 +54,7 @@ To copy from server to client :
 To copy from client to server :
 ``scp <path_in_client> <user_name@server_name/ip:path_in_server>``
 
->**Note:** we need to copy the public key to the server and put it in ***.ssh/authorized_keys*** file. If it doesm't exist create it.
+>**Note:** we need to copy the public key to the server and put it in ***.ssh/authorized_keys*** file. If it doesn't exist, create it.
 
 ![](./Artwork/Session%204/scp.png)
 
@@ -62,16 +64,20 @@ After that we will go to ``/etc/ssh/sshd_config`` and change 3 things to **no** 
 2. passwordauthentication no
 3. usepam no
 
-Then restart ssh service and it work fine.  ``sudo service ssh restart``
+Then restart ssh service and it work fine.
+
+``sudo service ssh restart``
 
 # Network Configuration
 
-In this section we will know some commands to configure a network and some network concepts.
+In this section we will know some network commands to configure a network and some network concepts.
 
-## Ifconfig
+## ifconfig
 
 It stands for InterFace CONFIGurator
+
 This command will give you some useful information about a network.
+
 **like:** your internal ip address (you can assign a new ip address with this command too), mac address, MTU(Maximum Transmission Unit) size and also you can enable or disable a network.
 
 When you type ``ifconfig``
@@ -88,14 +94,14 @@ Let's take a close look in **wlan0** interface :
 
 ![](./Artwork/Session%204/wlan.png)
 
-**UP ->** means it's enable
-**BROADCAST ->** means it's suppoet broadcasting
-**RUNNING ->** means it's operating
-**MULTICAST ->** means it's support multicasting
-**MTU ->** it's the size of transmission unit (frame/packet)
-**INET ->** it's the local network ip
-**NETMASK ->** it's the netmask for the network. [for more info](./Session%234Part1.md#subnet-masking)
-**BROADCAST ->** it's the broadcast address
+- **UP ->** it's enabled
+- **BROADCAST ->** it supports broadcasting
+- **RUNNING ->** it's operating
+- **MULTICAST ->** it supports multicasting
+- **MTU ->** the size of transmission unit (frame/packet)
+- **INET ->** the local network ip
+- **NETMASK ->** the netmask for the network. [for more info](./Session%234Part1.md#subnet-masking)
+- **BROADCAST ->** the broadcast address
 
 ### Assigning IP
 
@@ -111,14 +117,15 @@ Let's take a close look in **wlan0** interface :
 
 ## Ping
 
-This command test the connectivity between 2 hosts.
+This command tests the connectivity between 2 hosts.
+
 We can use ``ping`` with ``-c`` option to specifiy the number of package will be sent. ``ping -c 5 www.google.com``
 
 ![](./Artwork/Session%204/ping.png)
 
 ## Traceroute
 
-This command show you the road to reach the host and the number of hops it pass through.
+This command show you the road to reach the host and the number of hops it passes through.
 
 ``traceroute www.google.com``
 
@@ -126,7 +133,7 @@ This command show you the road to reach the host and the number of hops it pass 
 
 ## NSLOOKUP
 
-this command search for the ip of the given name
+This command searches for the ip of the given name
 
 ``nslookup www.google.com``
 
@@ -134,7 +141,7 @@ this command search for the ip of the given name
 
 ## MTR
 
-This command combines the functionality of the traceroute and pin programs in a single network diagnostic tool.
+This command combines the functionality of the traceroute and ping programs in a single network diagnostic tool.
 
 ``mtr www.google.com``
 
@@ -142,7 +149,7 @@ This command combines the functionality of the traceroute and pin programs in a 
 
 ## Hostname
 
-This command for show and change the hostname
+This command is for showing and changing the hostname
 
 To show the hostname : ``hostname``
 
@@ -159,13 +166,13 @@ Let's scan google ports : ``nmap www.google.com``
 
 ![](./Artwork/Session%204/nmap.png)
 
->**Importan Note:** every command has man options try to have fun with these options and search for they in man pages.
+>**Importan Note:** every command has options, try to have fun with these options and search for them in man pages.
 
 
 
 ## Network Configuration File
 
-In linux there are many important files to configure a network some of it are :
+In linux there are many important files to configure a network some of them are :
 
 ### /etc/hosts 
 
@@ -196,12 +203,3 @@ It has the ips of DNS servers
 This directory has all information about network you have logged in before.
 
 ![](./Artwork/Session%204/info%20of%20network.png)
-
-
-
-
- 
-
-
-
-
