@@ -45,7 +45,7 @@ _________________
 ### Session 5
 #### Part 1: Shell Scripting
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%205/Session%235Part1.pdf)
-- [MD] (https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%235Part1.md)
+- [MD](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%235Part1.md)
 
 #### Part 2: Cron and File Archiving
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%205/Session%235Part2.pdf)
