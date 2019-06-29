@@ -30,7 +30,7 @@ _________________
 
 #### Part 2: Users and Groups, Package Managers, Managing Processes and Services
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%203/Session%233Part2.pdf)
-- MD
+- [MD](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%233Part2.md)
 _________________
 ### Session 4
 #### Part 1: How the internet works
@@ -63,6 +63,6 @@ _________________
 * Hazem Essawi (7azoma)
 * Omar Shagar (omarshagar)
 * Mahmoud Elmanayly (MahmoudElmanayly)
-
+* Hassan Sarwat (please-try)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
