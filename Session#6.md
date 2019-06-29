@@ -1,4 +1,6 @@
 # Session#6
+[![](https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/logo-osc.png)](https://oscgeeks.org)
+
 # Git Version Control
 A Free Open Source DVCS ”distributed version control system ” 
 
