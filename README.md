@@ -21,20 +21,20 @@ _________________
 
 #### Part 2: Using man and info, Managing Directories and Files, Links
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%202/Session%232Part2.pdf)
-- [MD](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Session%232%20Part%202.md)
+- [MD](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%232Part2.md)
 _________________
 ### Session 3
 #### Part 1: File and Text Manipulation, IO Redirection, File Permissions
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%203/Session%233Part1.pdf)
-- MD
+- [MD](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%233Part1.md)
 
 #### Part 2: Users and Groups, Package Managers, Managing Processes and Services
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%203/Session%233Part2.pdf)
-- MD
+- [MD](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%233Part2.md)
 _________________
 ### Session 4
 #### Part 1: How the internet works
-- [MD](https://github.com/xMo3gza/OSC19-Linux-Workshop-Sessions/blob/master/Session%234Part1.md)
+- [MD](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%234Part1.md)
 - [YouTube Playlist](https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7&)
 
 #### Part 2: SSH
@@ -45,21 +45,28 @@ _________________
 ### Session 5
 #### Part 1: Shell Scripting
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%205/Session%235Part1.pdf)
-- MD
+- [MD](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%235Part1.md)
 
 #### Part 2: Cron and File Archiving
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%205/Session%235Part2.pdf)
-- MD
+- [MD](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Session%235Part2.md)
 _________________
 ### Session 6 (Git Version Control)
 - [PDF](https://github.com/Open-Source-Community/OSC19-Workshop-Sessions/blob/master/PDFs/Session%206/Session%236.pdf)
-- MD
+- [MD](./Session%236.md)
 _________________
 ## Credit to Moderators 
 * Ahmed Elmayyah (Satharus)
 * Martina Gerges (MartinaGerges)
 * Ahmed Yasser (4hmedyasser)
 * Mahmoud Mohammed (xMo3gza)
-
+* Hazem Essawi (7azoma)
+* Omar Shagar (omarshagar)
+* Mahmoud Elmanayly (MahmoudElmanayly)
+* Hassan Sarwat (please-try)
+* Ali Maher (anieo)
+* Menna Khalid (mennakhalid)
+* Nada Elaswad (nadaelaswad)
+* Abdelrahman Baher (abdelrahmanbaher)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
