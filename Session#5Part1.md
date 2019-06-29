@@ -27,7 +27,7 @@ BASH = Bourne Again SHell
    * Use Linux commands inside programs
 
 ## Command Line Format
-Options modify the commands behaviour on the arguments.
+Options modify the command's behaviour on the arguments.
 ##### EXAMPLES:
 `[COMMAND]` | `[OPTIONS]` | `[ARGUMENTS]`
 ---------- | ----------- | ------------
@@ -44,9 +44,9 @@ You can find what a command's options are and what it does by running:
 3. `command --help`
 
 # *CAUTION!*
--Never run a Linux command unless you know what it does.
--Take care if a command has a -f command as an option, it could mean **by force**.
--Never run any of the following commands unless you know what you're doing:
+- Never run a Linux command unless you know what it does.
+- Take care if a command has a -f command as an option, it could mean **by force**.
+- Never run any of the following commands unless you know what you're doing:
  - `rm -rf /` or `rm -rf /*` -> Deletes everything on your system, including Windows and Linux files.
  - `:(){:|:&};:` (aka Fork Bomb) -> Keeps executing a function that calls itself until the system crashes.
  - `command > /dev/sda` -> Data loss on the specified block.
