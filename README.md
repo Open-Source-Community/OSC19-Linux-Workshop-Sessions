@@ -38,7 +38,7 @@ _________________
 - [YouTube Playlist](https://www.youtube.com/playlist?list=PLzdnOPI1iJNfMRZm5DDxco3UdsFegvuB7&)
 
 #### Part 2: SSH
-- MD
+- [MD](https://github.com/MahmoudElmanayly/OSC19-Linux-Workshop-Sessions/blob/master/Session%234Part2.md)
 - [YouTube Playlist](https://www.youtube.com/playlist?list=PLtK75qxsQaMII75AbcuIruao1k2qdxwjg&)
 - [WarGames to play](http://overthewire.org/wargames), [The Bandit](http://overthewire.org/wargames/bandit/) is the easiest to start with.
 _________________
