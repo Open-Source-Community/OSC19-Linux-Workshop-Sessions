@@ -3,7 +3,7 @@
 
 
 # Shell "Bash" Scripting in GNU/Linux
-### What's a shell?
+## What's a shell?
 The simplest and most direct way for the user to use their machine.
 
 BASH = Bourne Again SHell
@@ -21,10 +21,10 @@ BASH = Bourne Again SHell
 * **Automate Tasks**
   * Automating the backing up of data
   * Automating package installations
-  * Automating package installations
+  * Automating updates
 * **Using Linux Commands inside a program**
-   * Use Linux commands inside programs
-   * Use Linux commands inside programs
+  * Use Linux commands inside programs 
+  * Controlling the workflow of your system and commands.
 
 ## Command Line Format
 Options modify the command's behaviour on the arguments.
@@ -176,13 +176,13 @@ If conditions are used to control a program's flow, as in they control what a pr
 ![Conditionals](./Artwork/Session%205/Conditionals.png)
 
 - Conditionals in C 
-```
+```C
 if (x == 5)
 {
     //DoSomething
 }
 ```
-``` 
+```C
 if (x == "String")
 {
     printf("1");
@@ -197,7 +197,7 @@ else
 }
 ```
 - Conditionals in BASH
-```
+```sh
 if [[ $x -eq 5 ]]
 then
     #DoSomething
@@ -205,7 +205,7 @@ fi
 ```
 > “{“ ‘opening brace’ is roughly equivalent to `then` and “}” ‘closing brace’ is roughly equivalent to `fi`
 
-``` 
+```sh
 if [[ $x = "String" ]]
 then 
     echo 1
@@ -288,7 +288,7 @@ triangle, identify whether the triangle is Scalene, Isosceles, or Equilateral.
 For loops are sed to loop in a certain range/array.
 
 - For loop in C 
-```
+```C
 int x;
 scanf("%i", &x);
 for (int i = 1; i <=x; i++)
@@ -298,7 +298,7 @@ for (int i = 1; i <=x; i++)
 ```
 
 - For loop in BASH
-```
+```sh
 read x
 for i in \`seq 1 $x\`
 do
@@ -316,7 +316,7 @@ You can type the backtick (\`) char by pressing the key left to the “1” key,
 While loops keep repeating a block of commands until the condition becomes false.
 
 - While loop in C 
-```
+```C
 int x = ;
 
 while (x < 11)
@@ -327,7 +327,7 @@ while (x < 11)
 ```
 
 - While loop in BASH
-```
+```sh
 x=1
 while [[ $x -lt 11 ]]
 do
@@ -338,7 +338,7 @@ done
 ## General Loop Syntax
 
 - While Loop 
-```
+```sh
 while [[ CONDITION ]]
 do
    #SOMETHING
@@ -346,7 +346,7 @@ done
 ```
 
 - For Loop
-```
+```sh
 for VAR in RANGE
 do
    #SOMETHING
@@ -357,7 +357,7 @@ done
 
 - Break
 > When the user enters 0, the code continues to run outside the loop.
-```
+```sh
 while [[ x -lt 10 ]]
 do
     read i
@@ -374,7 +374,7 @@ echo "break sent me here"
 
 - Continue
 > When the user enters 0, the code skips the lines of code below it and continues to the next iteration.
-```
+```sh
 while [[ x -lt 10 ]]
 do
     read i
@@ -412,7 +412,7 @@ You can write functions in Bash to organise your code and you can also pass argu
 
 ## General Function Syntax
 
-``` 
+```sh
 function NAME #Function Definition
 {
      #DoThings
@@ -422,7 +422,7 @@ NAME #Function call
 ```
 
 - Alternatively:
-```
+```sh
 NAME() #Function Definition
 {
      #DoThings
@@ -431,7 +431,7 @@ NAME #Function call
 ```
 
 - **Example 1:** This is a function that prints "Hello!" 5 times.
-```
+```sh
 function hello 
 {
     for i in `seq ` 5`
@@ -448,7 +448,7 @@ hello
 To use the arguments as variables, you can access their values by using $X where X is the order of the argument passed to the Fn.
 
 - **Example 2:** This is a function that adds 2 numbers.
-```
+```sh
 function add
 {
     echo $(($1 + $2))
@@ -474,7 +474,7 @@ add 3 5
 
 Explanation of the fork bomb:
 - We can reorganise the fork bomb to look like this, which is easier to see.
-```
+```sh
 :()        # Create a function named ‘ : ’
 {          # Start of the function body
     : | :& # Calls itself, once in the foreground and once in the background
