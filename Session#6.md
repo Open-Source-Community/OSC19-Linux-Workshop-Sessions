@@ -73,10 +73,10 @@ $ git <command> -h #summarized
 
 ## Create a new repository
 
-    ```sh
-    $ git init # Intialize a Embty/new repository
+```sh
+    $ git init # Intialize an empty/new repository
     $ git clone <URL># to Clone/Copy exsiting repository
-    ``` 
+``` 
 
 `<URL>`: can be git, shh, http, https, file , etc 
 
