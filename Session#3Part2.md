@@ -1,3 +1,7 @@
+# Session#3 Part 2
+[![](https://raw.githubusercontent.com/Open-Source-Community/oscgeeks.orgImages/master/Minified%20Images/navbar/logo-osc.png)](https://oscgeeks.org)
+
+
 # Users, Package Managers, & Intro to Processes
  
 ## Users and Groups
