@@ -171,7 +171,326 @@ _EXAMPLE:_ `./script1.sh 452 SHELL_SCRIPTING`
 Write a Bash script that reads an equation in the form of "A op B" where op can be any bash operator and outputs the result.
 
 
+# Conditionals in BASH
+If conditions are used to control a program's flow, as in they control what a program does and when.
+![Conditionals](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/Conditionals.png)
+
+- Conditionals in C 
+```
+if (x == 5)
+{
+    //DoSomething
+}
+```
+``` 
+if (x == "String")
+{
+    printf("1");
+}
+else if (x == "String 2")
+{
+    printf("2");
+}
+else
+{
+   printf("3");
+}
+```
+- Conditionals in BASH
+```
+if [[ $x -eq 5 ]]
+then
+    #DoSomething
+fi
+```
+> “{“ ‘opening brace’ is roughly equivalent to `then` and “}” ‘closing brace’ is roughly equivalent to `fi`
+
+``` 
+if [[ $x = "String" ]]
+then 
+    echo 1
+elif [[ $x = "String 2" ]]
+then
+    echo 2
+else
+    echo 3
+fi
+```
+
+### Writing conditionals in BASH
+
+- Start a condition with `if [[ condition ]]`
+- The next line contains `then` which is roughly equivalent to `‘{‘`
+- Write the commands that will execute if the condition is true.
+- End your condition with `fi` which is roughly equivalent to `‘}’`
+    - Or start an `elif [[ condition ]]`, with `then` in the line after it.
+        - Write the commands that will execute if the `elif` condition is true.
+        - End your conditionals with `fi`
+    - Or start an `else`, with **NO**  `then` in the line after it.
+        - Write the commands that will execute if the `else` condition is true.
+        - End your conditionals with `fi`
+
+### Conditions
+
+#### Comparing Numerical Variables
+
+Expression in C | Expression in BASH | Evaluates to true when:
+:----------: | :-----------: | :------------:
+`a == b` | `$a -eq $b` | a is equal to b
+`a != b` | `$a -ne $b` | a is not equal to b
+`a < b` | `$a -lt $b` | a is less than b
+`a > b` | `$a -gt $b` | a is greater than b
+`a >= b` | `$a -ge $b` | a is greater than or equal to b
+`a <= b` | `$a -le $b` | a is less than or equal to b
+
+**Another way of comparing numberical values is to use ```((  ))``` instead of ```[[  ]]``` which allows you to use C-like operators.**
+- Example:
+`if [[ $a -eq $b ]]` becomes `if (( a == b ))`
+
+#### Comparing String Variables
+
+Expression in C | Expression in BASH | Evaluates to true when:
+:----------: | :-----------: | :------------:
+`a == b` | `$a = $b` or `$a == $b` | a is the same as b
+`a != b` | `$a != $b` | a is different from b
+`strlen(a) == 0` | `-z $a` | a is empty
+
+#### Combining Conditions
+
+Expression in C | Expression in BASH | Evaluates to true when:
+:----------: | :-----------: | :------------:
+`(cond. A \|\| cond. B)` | `[[ cond. A \|\| cond. B ]]` | A OR B is true
+`(cond. A && cond. B)` | `[[ cond. A && cond. B ]]` | A AND B is true
+`(!cond. A)` | `[[ ! cond. A ]]` | A is false
+
+#### Let's Solve!
+##### [Getting started with conditionals](https://www.hackerrank.com/challenges/bash-tutorials---getting-started-with-conditionals/problem):
+- If the character is 'Y' or 'y' display "YES". If the character is 'N' or 'n'
+display "NO". No other character will be provided as input.
 
 
+##### [More on Conditionals](https://www.hackerrank.com/challenges/bash-tutorials---more-on-conditionals/problem):
+- Given three integers (X, Y, and Z) representing the three sides of a
+triangle, identify whether the triangle is Scalene, Isosceles, or Equilateral.
 
+##### [Comparing Numbers](https://www.hackerrank.com/challenges/bash-tutorials---comparing-numbers/problem):
+- Given two integers, X and Y, identify whether X < Y or X > Y or X = Y.
+
+# Loops in BASH
+
+- Loops are used to repeat a process/commands a certain no. of times.
+- There are 3 types of loops in Bash (for, while, and until).
+- The following slides cover for and while loops only, as until loops are very similar to while and are not used *that* differently.
+
+![Loops](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/Loops.png)
+
+### For Loops
+For loops are sed to loop in a certain range/array.
+
+- For loop in C 
+```
+int x;
+scanf("%i", &x);
+for (int i = 1; i <=x; i++)
+{
+    printf("%d\n", i);
+}
+```
+
+- For loop in BASH
+```
+read x
+for i in \`seq 1 $x\`
+do
+    echo $i
+done
+```
+
+`seq 1 $x` means “sequence from 1 to the value of x, ‘`$x`’ can be replaced with any other value.
+- Ex: `seq 1 12` or `seq 1 $y`
+
+You can type the backtick (\`) char by pressing the key left to the “1” key, or the ذ key if you're an Arabic speaker.
+
+### While Loops 
+
+While loops keep repeating a block of commands until the condition becomes false.
+
+- While loop in C 
+```
+int x = ;
+
+while (x < 11)
+{
+    printf("%d\n", x);
+    x++;
+}
+```
+
+- While loop in BASH
+```
+x=1
+while [[ $x -lt 11 ]]
+do
+    echo $x
+    let x+=1
+done
+```
+## General Loop Syntax
+
+- While Loop 
+```
+while [[ CONDITION ]]
+do
+   #SOMETHING
+done
+```
+
+- For Loop
+```
+for VAR in RANGE
+do
+   #SOMETHING
+done
+```
+
+### Break and Continue statements
+
+- Break
+> When the user enters 0, the code continues to run outside the loop.
+```
+while [[ x -lt 10 ]]
+do
+    read i
+    
+    if [[ i -eq 0 ]]
+    then 
+        break
+    fi
+    echo $i
+done
+
+echo "break sent me here"
+```
+
+- Continue
+> When the user enters 0, the code skips the lines of code below it and continues to the next iteration.
+```
+while [[ x -lt 10 ]]
+do
+    read i
+    
+    if [[ i -eq 0 ]]
+    then 
+        echo "Skipping the rest of the code!"
+        continue
+    fi
+    echo $i
+done
+```
+
+
+#### Let's Solve!
+##### [Looping with Numbers](https://www.hackerrank.com/challenges/bash-tutorials---looping-with-numbers/problem):
+- Use for loops to display the natural numbers from 1 to 50.
+
+
+##### [Looping and Skipping](https://www.hackerrank.com/challenges/bash-tutorials---looping-and-skipping/problem):
+- Use for loops to display only odd natural numbers from 1 to 99.
+
+##### [Compute the Average](https://www.hackerrank.com/challenges/bash-tutorials---compute-the-average/problem):
+- Given integers, compute their average correct to three decimal places.
+Try solving it on your own, if you can’t you can search for the “`bc`” [command](https://www.geeksforgeeks.org/bc-command-linux-examples/) which can be used to print floating point variables.
+
+# Functions in BASH
+
+Which do you think is easier and more organised?
+![Function Comparison](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/FunctionsComparison.png)
+
+You may have guessed that B is more organised and easier to write, which is true as it contains the least amount of repeated code.
+
+You can write functions in Bash to organise your code and you can also pass arguments to functions like you can pass them to scripts.
+
+## General Function Syntax
+
+``` 
+function NAME #Function Definition
+{
+     #DoThings
+}
+
+NAME #Function call
+```
+
+- Alternatively:
+```
+NAME() #Function Definition
+{
+     #DoThings
+}
+NAME #Function call
+```
+
+- **Example 1:** This is a function that prints "Hello!" 5 times.
+```
+function hello 
+{
+    for i in `seq ` 5`
+    do
+        echo "Hello!"
+    done
+}
+
+hello
+```
+![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/HelloExample.png)
+
+#### Passing arguments to a function
+To use the arguments as variables, you can access their values by using $X where X is the order of the argument passed to the Fn.
+
+- **Example 2:** This is a function that adds 2 numbers.
+```
+function add
+{
+    echo $(($1 + $2))
+}
+
+add 3 5
+```
+
+![](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/ArgumentsExample.png)
+
+#### Let's Solve!
+##### [Looping with Numbers](https://www.hackerrank.com/challenges/bash-tutorials---looping-with-numbers/problem):
+- Use for loops to display the natural numbers from 1 to 50.
+
+##### [ENGLISH_CALC Exercise](https://www.learnshell.org/en/Shell_Functions):
+- In this exercise, you will need to write a function called ENGLISH_CALC which can process sentences such as:
+    - `‘3 plus 5’ → ‘3 + 5 = 8’`
+    - `5 minus 1' → ‘5 - 1 = 4’`
+    - `4 times 6' → ‘4 * 6 = 24’`
+
+# The Fork Bomb
+# :(){:|:&};:
+
+Explanation of the fork bomb:
+- We can reorganise the fork bomb to look like this, which is easier to see.
+```
+:()        # Create a function named ‘ : ’
+{          # Start of the function body
+    : | :& # Calls itself, once in the foreground and once in the background
+}          # End of the function body
+
+:          # Function call
+```
+
+![ForkBomb](https://github.com/Open-Source-Community/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%205/ForkBomb.png)
+# References
+
+- [LearnShell](http://www.learnshell.org/en/)
+- [TLDP](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
+- [Ryan Tutorials](https://ryanstutorials.net/bash-scripting-tutorial/)
+- [DevHints](https://devhints.io/bash)
+- [LearnXinYMinutes](https://learnxinyminutes.com/docs/bash/)
+- [Bash Hackers](http://wiki.bash-hackers.org/)
+- [Useful Linux Commands(Quidsup)](https://www.youtube.com/playlist?list=PLzZ0JczEkZfndVnxf6jbWcC9-erWqGcSd)
 
