@@ -48,11 +48,11 @@ sudo useradd -m <username>
 
 **Breaking it down**
 
-_sudo_: Needed because you need administrator privilage to create a new a user.
+```sudo```: Needed because you need administrator privilage to create a new a user.
 
-_useradd_: The command used to add users.
+```useradd```: The command used to add users.
 
-_-m_: An option used to make a home directory for the new user by default.
+```-m```: An option used to make a home directory for the new user by default.
 
 If we create a user named temp and check the content of the etc/passwd file
 again:
@@ -93,13 +93,11 @@ exit
 
 ### Groups
 
-Groups are basically a collection of users, it helps organize user access on the
-system.
+Groups are basically a collection of users, it helps organize user access on the system.
 
-For example: If you’re working for a company, you don’t want the HR to edit the
-code and at the same time you don’t want the developers to read the HR files.
-You’ll put all the HR personnel in a group and give that group access to HR files
-and deny access to anyone who isn’t in the HR group.
+For example: If you’re working for a company, you don’t want the HR to edit the code and at the same time you don’t want the developers to read the HR files.
+
+You’ll put all the HR personnel in a group and give that group access to HR files and deny access to anyone who isn’t in the HR group.
 
 #### Adding and Deleting Groups
 
@@ -119,15 +117,20 @@ use the command
 ```
 usermod
 ```
-To change the primary group we’ll add the option _-g new_primary_group_ 
+To change the primary group we’ll add the option 
+
+```-g new_primary_group```
 
 To change the supplementary groups we’ll add the option
-*-G new_supplementary_groups*
+
+```-G new_supplementary_groups```
 
 
 However this will overwrite the current supplementary groups a user has.
+
 If we want to append the stated groups, we’ll add the a option to append
-*-aG new_supplementary_groups*
+
+```-aG new_supplementary_groups```
 
 **Example**
 ```
@@ -139,29 +142,23 @@ _________________________________
 
 ### Packages and Repositories
 
-A package in linux is considered to be a collection of files, it can be an application,
-a program or even documentation. Packages in Linux are stored in repositories
-where the package manager can easily find, download, and install them.
+A package in linux is considered to be a collection of files, it can be an application, a program or even documentation. Packages in Linux are stored in repositories where the package manager can easily find, download, and install them.
 
-**Repositories** can be considered something like an app store, that has many
-packages on it, and you choose to install and upgrade packages from it.
+**Repositories** can be considered something like an app store, that has many packages on it, and you choose to install and upgrade packages from it.
 
 ### Package Manager
 
-The package manager is responsible for downloading, installing, searching,
-removing, and upgrading packages.
+The package manager is responsible for downloading, installing, searching, removing, and upgrading packages.
 
 It consists of high and low level parts.
 
-The **high level** package manager, called *apt* or *apt-get* in Debian-based
-distributions, it is responsible for searching the repositories and finding the
-packages, it is also responsible for resolving dependancies.
-A **dependancy** is a package required for another package to work.
-For example: The program GIMP requires a toolkit called GTK+ to work, so the
-package manager automatically installs GTK+ when installing GIMP.
+The **high level** package manager, called *apt* or *apt-get* in Debian-based distributions, it is responsible for searching the repositories and finding the packages, it is also responsible for resolving dependancies.
 
-The **low level manager**, called *dpkg* in Debian-based distributions, is the one
-responsible for the actual **installation** and **compilation** of the packages.
+A **dependancy** is a package required for another package to work.
+
+For example: The program GIMP requires a toolkit called GTK+ to work, so the package manager automatically installs GTK+ when installing GIMP.
+
+The **low level manager**, called *dpkg* in Debian-based distributions, is the one responsible for the actual **installation** and **compilation** of the packages.
 
 ### Installing and Removing Packages
 
@@ -171,11 +168,7 @@ sudo apt install packages_names
 ```
 ![image of package installation](https://github.com/please-try/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/install%20package.PNG)
 
-In this example, vim-runtime is
-considered a dependancy, as vim
-needs it to work, the package
-manager notified us that it’ll be
-installed alongside vim.
+In this example, vim-runtime is considered a dependancy, as vim needs it to work, the package manager notified us that it’ll be installed alongside vim.
 
 To remove a package, we use the command
 ```
@@ -193,17 +186,11 @@ sudo apt search <keyword>
 
 ### Updating and Upgrading
 
-As mentioned before, packages are downloaded from repositories, which can be
-considered a storage for packages. However after a while the packages get
-updated and maybe new packages are added, the local repository data on your
-system may get outdated so you need to update the local data.
+As mentioned before, packages are downloaded from repositories, which can be considered a storage for packages. However after a while the packages get updated and maybe new packages are added, the local repository data on your system may get outdated so you need to update the local data.
 
-The command *apt update* will update the links inside the repository data file
-so that when you download or update something from the repository you’ll get the
-lastest version.
+The command ```apt update``` will update the links inside the repository data file so that when you download or update something from the repository you’ll get the lastest version.
 
-As for the command *apt upgrade* it upgrades all the packages on your
-system to their latest versions available in the repositories.
+As for the command ```apt upgrade``` it upgrades all the packages on your system to their latest versions available in the repositories.
 
 ______
 
@@ -211,42 +198,31 @@ ______
 
 ### What are Processes
 
-A process is any program that is currently running on the system, you’ll have
-foreground processes and background processes.
+A process is any program that is currently running on the system, you’ll have foreground processes and background processes.
 
-Background processses aren’t seen by the user, this will include things such as
-update managers, network managers, etc...
+Background processses aren’t seen by the user, this will include things such as update managers, network managers, etc...
 
-Foreground processes are programs that are currently being used by the user,
-such as Google Chromium, Firefox, GIMP, Codeblocks, etc..
+Foreground processes are programs that are currently being used by the user, such as Google Chromium, Firefox, GIMP, Codeblocks, etc..
 
 ### PS and Top Commands
 
-The *ps* command is responsible for telling you all the processing currently
-running on the terminal
+The ```ps``` command is responsible for telling you all the processing currently running on the terminal
 
 ![Image of PS](https://github.com/please-try/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/PS.PNG)
 
-- PID is short for
-Process ID.
-- ps aux will
-show you ALL of the
-processes running of
-the system.
+- PID is short for Process ID.
+- ```ps aux``` will show you ALL of the processes running on the system.
 
-The *top* command will tell you all the current processes running in the system,
-and update them if any processes are killed or changed.
+The ```top``` command will tell you all the current processes running in the system, and update them if any processes are killed or changed.
 
 ![Image of top](https://github.com/please-try/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/top.PNG)
 
-If you look at the figure above, you’ll see a command with the PID 1 called
-systemd, this is the initialisation service responsible for the whole system after
-booting.
+If you look at the figure above, you’ll see a command with the PID 1 called systemd, this is the initialisation service responsible for the whole system after booting.
 
 ### Signals
 
-signal is basically a command sent by the system to a process, the signal we’ll
-discuss today is called _sigkill_ which is responsible for **ending a process**.
+A signal is basically a command sent by the system to a process, the signal we’ll discuss today is called _sigkill_ which is responsible for **ending a process**.
+
 It is similar to **End Task** in Windows.
 
 To send a sigkill, we can use the command
@@ -259,9 +235,7 @@ killall <process_name>
 ```
 ![Image of kill](https://github.com/please-try/OSC19-Linux-Workshop-Sessions/blob/master/Artwork/Session%203/kill.PNG)
 
-Note: ‘#’means the
-start of a comment in
-the Linux shell.
+Note: ‘#’means the start of a comment in the Linux shell.
 
 
 
