@@ -343,21 +343,21 @@ $ git clone <URL>
 
 ## Local Git Repositories 
 
-    - git daemon
-    - base-path=<path> 
-    - export-all 
-    - reuseaddr 
-    - informative-errors 
-    - verbose
-    - enable=receive-pack
-    - You can use aliases
+    - git daemon:
+     - base-path=<path> 
+     - export-all 
+     - reuseaddr 
+     - informative-errors 
+     - verbose
+     - enable=receive-pack
+     - You can use aliases
 
 ## git aliases
-
     - git  config --global alias.<name> ‘commands’
-    - git config --global alias.serve '!git daemon --base-path=. --export-all --areuseaddr --informative-errors --verbose' 
-    - git hub or git serve
-
+```sh
+$ git config --global alias.serve '!git daemon --base-path=. --export-all --areuseaddr --informative-errors --verbose' 
+$ git serve
+```
 # Resources
 
 - [`Pro GIt`](https://github.com/github/gitignore)
