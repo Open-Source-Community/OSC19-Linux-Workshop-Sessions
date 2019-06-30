@@ -184,9 +184,9 @@ $ git <command> -h #summarized
 - ### Committing Changes
 
     ```sh
-    git commit
-    git commit -m "short Message"
-    git commit -am “Your Message” #Stage all untracked files and commit all files in staged area
+    $ git commit
+    $ git commit -m "short Message"
+    $ git commit -am “Your Message” #Stage all untracked files and commit all files in staged area
     ```
 
     Example 
@@ -217,13 +217,13 @@ $ git <command> -h #summarized
 ### Undo add (Unstaging a Staged File)
 
 ```sh
-git reset <files>
+$ git reset <files>
 ```
 
 ### Amend
 
 ```sh
-git commit --amend
+$ git commit --amend
 ```
 
 Used to change your latest log message and to make modifications to the most recent commit
@@ -231,26 +231,33 @@ Used to change your latest log message and to make modifications to the most rec
 ### Undo Commit
 
 ``` sh
-    $ git revert<commit>
-    $ git checkout<file|commit>
-    $ git reset
-    $ git reset --soft<commit>
-    $ git reset --hard<commit>
+    $ git revert <commit> # merge a previous commit with current commit into a new commit
+    $ git checkout <commit> # move the Head to the specified commit and change the working set to match the commit
+    $ git checkout <file> # change the file to match the commited version of the file "the Head commit"
+    $ git reset --soft <commit> # the Head and the branch pointer will move to the specified commit
+    $ git reset <commit> # the Head and the branch pointer will move to the specified commit and will clear the index
+    $ git reset --hard <commit> # the Head and the branch pointer will move to the specified commit and will clear the index and reset the working directory to match it
 ```
+    - git reset:
+	- --soft: uncommit changes, changes are left staged (index).
+	- --mixed: (default): uncommit + unstage changes, changes are left in working tree.
+	- --Hard: uncommit + unstage + delete changes, nothing left.
     - <commit>:
         - SHA1
         - Head^,Head@{number}
-
+	
 ## Remote Repositories
 
 - #### Clone a Repository
-
-        -git clone<URL>
-        -https://github.com/
-        -git://github.com/koke/grit.git
-        -git@github.com:mojombo/grit.git
-        -/srv/git/project.git
-        -file:///srv/git/project.git
+```sh
+$ git clone <URL>
+```
+	- <URL>:
+	 - https://github.com/
+         - git://github.com/koke/grit.git
+         - git@github.com:mojombo/grit.git
+         - /srv/git/project.git
+         - file:///srv/git/project.git
 
 - ### Showing Your Remotes
 
@@ -336,21 +343,21 @@ Used to change your latest log message and to make modifications to the most rec
 
 ## Local Git Repositories 
 
-    - git daemon
-    - base-path=<path> 
-    - export-all 
-    - reuseaddr 
-    - informative-errors 
-    - verbose
-    - enable=receive-pack
-    - You can use aliases
+    - git daemon:
+     - base-path=<path> 
+     - export-all 
+     - reuseaddr 
+     - informative-errors 
+     - verbose
+     - enable=receive-pack
+     - You can use aliases
 
 ## git aliases
-
     - git  config --global alias.<name> ‘commands’
-    - git config --global alias.serve '!git daemon --base-path=. --export-all --areuseaddr --informative-errors --verbose' 
-    - git hub or git serve
-
+```sh
+$ git config --global alias.serve '!git daemon --base-path=. --export-all --areuseaddr --informative-errors --verbose' 
+$ git serve
+```
 # Resources
 
 - [`Pro GIt`](https://github.com/github/gitignore)
