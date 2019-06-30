@@ -184,9 +184,9 @@ $ git <command> -h #summarized
 - ### Committing Changes
 
     ```sh
-    git commit
-    git commit -m "short Message"
-    git commit -am “Your Message” #Stage all untracked files and commit all files in staged area
+    $ git commit
+    $ git commit -m "short Message"
+    $ git commit -am “Your Message” #Stage all untracked files and commit all files in staged area
     ```
 
     Example 
@@ -217,13 +217,13 @@ $ git <command> -h #summarized
 ### Undo add (Unstaging a Staged File)
 
 ```sh
-git reset <files>
+$ git reset <files>
 ```
 
 ### Amend
 
 ```sh
-git commit --amend
+$ git commit --amend
 ```
 
 Used to change your latest log message and to make modifications to the most recent commit
@@ -250,7 +250,7 @@ Used to change your latest log message and to make modifications to the most rec
 
 - #### Clone a Repository
 ```sh
-        git clone <URL>
+$ git clone <URL>
 ```
 	- <URL>:
 	 - https://github.com/
