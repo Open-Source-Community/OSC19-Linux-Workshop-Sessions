@@ -104,7 +104,7 @@ You can find what a command's options are and what it does by running:
   * `varname=20`
 * BASH does NOT support floating point integers natively.
 * You can also use \ as an escape character to prevent certain characters from being processed by the shell such as the space character:
-  * `x=text with spaces` -> value of x = "text"
+  * `x=text with spaces` -> syntax error
   * `x=text\ with\ spaces` -> value of x = "text with spaces"
 * `varname` -> refers to the variable.
 * `$varname` -> refers to the value of the variable.
