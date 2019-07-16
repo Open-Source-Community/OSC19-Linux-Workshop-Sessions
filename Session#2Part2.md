@@ -142,7 +142,7 @@ _____
 
 - ```rm filename```
 
-- ```rm -r directory_name``` OR ```rmdir directory_name```
+- ```rm -d directory_name``` OR ```rmdir directory_name```
 
 - ```rm -r directory_name```
 
