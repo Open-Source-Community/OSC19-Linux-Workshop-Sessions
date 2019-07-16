@@ -2,7 +2,7 @@
 
 This repo is meant for beginners getting into Linux and the world of FOSS, and students who have attended our Linux workshop. 
 
-Contribtions are welcome!😁 Don't forget to add your name to the contributors list.
+Contribtions are welcome! 😁 Don't forget to add your name to the contributors list.
 
 
 Here is a list of all of the content and their summaries.
