@@ -142,7 +142,7 @@ root directory.
 
 #### Here’s a demonstration of the Linux Filesystem Hierarchy:
 
-![](./Images/Session%202/linux_filesystem.png)
+![](./Images/Session%202/linux_filesystem_fix.png)
 
 From the previous, we can see that: “Everything in Linux is a file”. 
 Even devices and processes, everything is a file under the ‘/’ directory somehow.
