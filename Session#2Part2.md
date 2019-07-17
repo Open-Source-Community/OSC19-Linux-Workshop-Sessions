@@ -29,7 +29,7 @@ This indeed does bring up the first occurrence of the word ***"sections"***.
 
 * Note: You can also use ``info`` and ``--help`` to get information about a command.
 
-**Example**: ```info ls```  and ```ls -help```
+**Example**: ```info ls```  and ```ls --help```
 
 ### Searching for a Command ###
 
