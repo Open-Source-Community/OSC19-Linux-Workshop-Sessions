@@ -29,7 +29,7 @@ This indeed does bring up the first occurrence of the word ***"sections"***.
 
 * Note: You can also use ``info`` and ``--help`` to get information about a command.
 
-**Example**: ```info ls```  and ```ls -help```
+**Example**: ```info ls```  and ```ls --help```
 
 ### Searching for a Command ###
 
@@ -142,7 +142,7 @@ _____
 
 - ```rm filename```
 
-- ```rm -r directory_name``` OR ```rmdir directory_name```
+- ```rm -d directory_name``` OR ```rmdir directory_name```
 
 - ```rm -r directory_name```
 
@@ -170,7 +170,7 @@ linked to) is moved or removed._
 
 We have a file A.txt if we create a soft link and a hard link both pointing to it and then delete A.txt, the result is visible in the opposite figure.
 
-We can simply say that a soft link is just a file that points to another, while a hard link is a xopy of a file that is always sychronised with it.
+We can simply say that a soft link is just a file that points to another, while a hard link is a copy of a file that is always sychronised with it.
 
 ![](./Images/Session%202/remove.png)
 

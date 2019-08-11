@@ -1,6 +1,8 @@
 # OSC19-Linux-Workshop-Sessions
 
-This repo is meant for beginners getting into Linux and the world of FOSS, and students who have attended our Linux workshop.
+This repo is meant for beginners getting into Linux and the world of FOSS, and students who have attended our Linux workshop. 
+
+Contribtions are welcome! 😁 Don't forget to add your name to the contributors list.
 
 
 Here is a list of all of the content and their summaries.
@@ -55,7 +57,7 @@ _________________
 - [PDF](./PDFs/Session%206/Session%236.pdf)
 - [MD](./Session%236.md)
 _________________
-## Credit to Moderators 
+## Credit to Linux Moderators 
 * Ahmed Elmayyah (Satharus)
 * Martina Gerges (MartinaGerges)
 * Ahmed Yasser (4hmedyasser)
@@ -68,5 +70,9 @@ _________________
 * Menna Khalid (mennakhalid)
 * Nada Elaswad (nadaelaswad)
 * Abdelrahman Baher (abdelrahmanbaher)
+___________________
+## Credit to Contributors
+* Hazem EL-Marsafawy (Hazem-ElMarsfawy) [English Heroes Committee]
+* Ahmed Saeed (Iamahmedsaeedas) [Artwork Committee]
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
