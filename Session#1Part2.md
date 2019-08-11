@@ -91,7 +91,7 @@ This type of firmware uses **GPT** (GUID Partition Table) as the default partiti
     * You’ll have to `shrink` one of the existing partitions leaving at least 30 GiBs of unallocated space after it.
 
   * ###### If you have `less than 3 Primary Partitions` and `1 Extended Partition`
-    * You'll have to `shrink` one of the existing `Logical Partitions` inside the `Extended Partiton` preferably the last one leaviing at least 30 GiBs of unallocated space after it.
+    * You'll have to `shrink` one of the existing `Logical Partitions` inside the `Extended Partiton` preferably the last one leaving at least 30 GiBs of unallocated space after it.
 
 * ##### If you are using `UEFI` then your disk drive is using the `GPT` Partition table which means you can create multiple `Primary Partitons`.
 
