@@ -93,7 +93,7 @@ The operating system is very modular and customisable, which allows you to creat
 - **UNIX:** A proprietary software operating system that was designed for servers, programmers, and HPC.
 - **Linux:** Free and open source kernel.
 - **FOSS:** Free and Open Source Software.
-- **Proprietary Software:** Closed source s oftware that is copyrighted.
+- **Proprietary Software:** Closed source software that is copyrighted.
 - **GNU:** GNU’s Not Unix, a free and open source operating system designed to replace Unix.
 - **GNU/Linux:** Used to refer to the GNU operating system when it is using the Linux kernel.
 - **Linux Distribution:** An operating system that is built on the Linux kernel or forked from an existing Linux distribution, like Ubuntu, Debian, Linux Mint, RHEL, etc..
