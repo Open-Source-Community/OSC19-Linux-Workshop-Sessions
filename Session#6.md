@@ -101,7 +101,7 @@ $ git <command> -h #summarized
 - ### Checking status of your files
 
     ```sh
-    $ git status`
+    $ git status
     $ git status -s # Summarized
     ```
 
